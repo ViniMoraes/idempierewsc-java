@@ -17,12 +17,16 @@ import org.idempiere.webservice.client.response.WindowTabDataResponse;
  *
  */
 public class QueryTest {
+	//CREDENTIALS
+	public static final String USER_NAME = null;
+	public static final String PASSWORD = null;
+	public static final String URL_BASE = null;
 
 	
 	public static LoginRequest getLogin() {
         LoginRequest login = new LoginRequest();
-        login.setUser("");
-        login.setPass("");
+        login.setUser(USER_NAME);
+        login.setPass(PASSWORD);
         login.setClientID(1000000);
         login.setRoleID(1000000);
         login.setOrgID(1000001);
@@ -32,7 +36,7 @@ public class QueryTest {
     }
 
     public static String getUrlBase() {
-        return "";
+        return URL_BASE;
     }
 
     public static WebServiceConnection getClient() {
